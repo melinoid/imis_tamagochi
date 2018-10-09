@@ -1,2 +1,0 @@
-# -
-imis_tamagotchi

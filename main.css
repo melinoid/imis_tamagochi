@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 600px;
+  height: 600px;
+  background: #fff;
+}
+.gameBlock {
+  width: 438px;
+  height: 565px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #ccffd9;
+}
+button {
+  background: #262626;
+  color: rgb(248, 248, 248);
+  border: none;
+  border-radius: 4px;
+  margin: 1px;
+}
+.backImage {
+  width: 398px;
+  height: 500px;
+}
+.frontImage {
+  width: 398px;
+  height: 500px;
+}
+.control {
+  width: 398px;
+}
+.started {
+  display: none;
+}
+.unstarted {
+  display: flex;
+  justify-content: center;
+}
+.debug {
+  display: none;
+}
+.parameters {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 120px;
+  border-radius: 10px;
+  background: #f2f2f2;
+}
+/* Прогрессбары */
+.Ha {
+  margin: 3px;
+  display: flex;
+}
+.Ha #PBHa {
+  width: 130px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid rgb(202, 202, 202);
+}
+.Ha #picHa {
+  width: 20px;
+  height: 20px;
+  background-image: url("source/Ha.png");
+  background-size: 100%;
+}
+.Ha #PBHa #LoadPBHa {
+  width: 0%;
+  height: 100%;
+  background: green;
+  transition: 1s linear;
+}
+.Hs {
+  margin: 3px;
+  display: flex;
+}
+.Hs #PBHs {
+  width: 130px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid rgb(202, 202, 202);
+}
+.Hs #picHs {
+  width: 20px;
+  height: 20px;
+  background-image: url("source/Hs.png");
+  background-size: 100%;
+}
+.Hs #PBHs #LoadPBHs {
+  width: 0%;
+  height: 100%;
+  background: green;
+  transition: 1s linear;
+}
+.Lt {
+  margin: 3px;
+  display: flex;
+}
+.Lt #PBLt {
+  width: 130px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid rgb(202, 202, 202);
+}
+.Lt #picLt {
+  width: 20px;
+  height: 20px;
+  background-image: url("source/Lt.png");
+  background-size: 100%;
+}
+.Lt #PBLt #LoadPBLt {
+  width: 0%;
+  height: 100%;
+  background: green;
+  transition: 1s linear;
+}
+.TpTm {
+  width: 150px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Tp {
+  display: flex;
+}
+.Tm {
+  display: flex;
+}
+#picTm {
+  width: 20px;
+  height: 20px;
+  background-image: url("source/Tm.png");
+  background-size: 100%;
+}
+#picTp {
+  width: 20px;
+  height: 20px;
+  background-image: url("source/Tp.png");
+  background-size: 100%;
+}
+#LoadPBTp {
+  transition: 1s linear;
+}
+.control button {
+  width: 100%;
+  height: 25px;
+}
+.tran {
+  background-size: 100%;
+  transition: 0.5s linear;
+}
+#pot {
+  background-image: url("source/pot.png");
+}
+#seed {
+  background-image: url("source/seed.png");
+}
+#sprout {
+  background-image: url("source/sprout.png");
+}
+#sprout2 {
+  background-image: url("source/sprout2.png");
+}
+#bud {
+  background-image: url("source/bud.png");
+}
+#flower {
+  background-image: url("source/flower.png");
+}
+#ovary {
+  background-image: url("source/ovary.png");
+}
+#fetus {
+  background-image: url("source/fetus.png");
+}
+#wither3 {
+  background-image: url("source/wither3.png");
+}
+#wither4 {
+  background-image: url("source/wither4.png");
+}
+#wither5 {
+  background-image: url("source/wither5.png");
+}
+#wither6 {
+  background-image: url("source/wither6.png");
+}
+#wither7 {
+  background-image: url("source/wither7.png");
+}
+#death1 {
+  background-image: url("source/death1.png");
+}
+#death2 {
+  background-image: url("source/death2.png");
+}
+#death3 {
+  background-image: url("source/death3.png");
+}
+#death4 {
+  background-image: url("source/death4.png");
+}
+#death5 {
+  background-image: url("source/death5.png");
+}
+#death6 {
+  background-image: url("source/death6.png");
+}
+#death7 {
+  background-image: url("source/death7.png");
+}
+#end {
+  background-image: url("source/end.png");
+}
+#morning {
+  background-image: url("source/morning.png");
+}
+#day {
+  background-image: url("source/day.png");
+}
+#eve {
+  background-image: url("source/eve.png");
+}
+#night {
+  background-image: url("source/night.png");
+}

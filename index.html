@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <title>Tamagochi</title>
+
+</head>
+
+<body>
+    <main>
+        <audio id="backMusic" src="source/back.m4a" autoplay loop></audio>
+        <audio id="wavjump" src="source/jump.wav"></audio>
+        <audio id="wavbadjump" src="source/badJump.wav"></audio>
+        <audio id="wavdeath" src="source/death.wav"></audio>
+        <div class="gameBlock">
+            <div>
+                <div class="backImage tran" id="night">
+                    <div class="frontImage tran" id="pot">
+
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="unstarted">
+                        <button id="start">Начать игру</button>
+                    </div>
+                    <div class="started">
+                        <button id="pour">Полить</button>
+                        <button id="sprinkle">Побрызгать</button>
+                        <button id="light">Лампа</button>
+                        <button id="heating">Обогрев</button>
+                        <button id="wind">Вентилятор</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="parameters">
+                <!-- Влажность воздуха -->
+                <div class="Ha">
+                    <div id="picHa"></div>
+                    <div id="PBHa">
+                        <div id="LoadPBHa">
+                        </div>
+                    </div>
+                </div>
+                <!-- Влажность земли -->
+                <div class="Hs">
+                    <div id="picHs"></div>
+                    <div id="PBHs">
+                        <div id="LoadPBHs">
+                        </div>
+                    </div>
+                </div>
+                <!-- Освещенность -->
+                <div class="Lt">
+                    <div id="picLt"></div>
+                    <div id="PBLt">
+                        <div id="LoadPBLt">
+                        </div>
+                    </div>
+                </div>
+                <!-- температура -->
+                <div class="TpTm">
+                    <div class="Tp">
+                        <div id="picTp"></div>
+                        <div id="PBTp">
+                            <div id="LoadPBTp">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Tm">
+                        <div id="picTm"></div>
+                        <div id="Tm"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="debug">
+                Название состояния: <b id="nameState"></b>
+                <p></p>
+                Оставшееся время игры: <b id="globalTime"></b>
+                <p></p>
+                Прошло времени: <b id="passTime"></b>
+                <p></p>
+                Время состояния: <b id="stateTime"></b>
+                <p></p>
+                Время суток: <b id="namePeriod"></b>
+                <p></p>
+                Влажность воздуха: <b id="Ha"></b>
+                <p></p>
+                Влажность земли: <b id="Hs"></b>
+                <p></p>
+                Освещенность: <b id="Lt"></b>
+                <p></p>
+                Температура: <b id="Tp"></b>
+                <p></p>
+                Время плохого состояния: <b id="badStateTime"></b>
+                <p></p>
+                <button id="reset">Сбросить</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
