@@ -443,4 +443,3 @@ function EndGame() {
   Param.Lt = 11;
   Param.Tp = 11;
 }
-var ad = 1;
