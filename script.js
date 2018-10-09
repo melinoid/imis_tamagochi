@@ -1,6 +1,6 @@
 var Param = {
   debug: 0,
-  speed: 1,
+  speed: 1000,
   globalTime: 558000,
   period: 0,
   namePeriod: "",
