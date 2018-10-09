@@ -343,14 +343,14 @@ document.querySelector("#start").addEventListener("click", function() {
       // document.querySelector("#Lt").innerHTML = Param.Lt;
       // document.querySelector("#Tp").innerHTML = Param.Tp;
       // document.querySelector("#badStateTime").innerHTML = Param.badStateTime;
-    }
+    };
     document.querySelector("#reset").addEventListener("click", function() {
       Param.Ha = 0;
       Param.Hs = 0;
       Param.Lt = 0;
       Param.Tp = 0;
     });
-  }
+  };
 });
 //Кнопки
 //Полить
