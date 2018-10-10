@@ -343,14 +343,14 @@ document.querySelector("#start").addEventListener("click", function() {
       // document.querySelector("#Lt").innerHTML = Param.Lt;
       // document.querySelector("#Tp").innerHTML = Param.Tp;
       // document.querySelector("#badStateTime").innerHTML = Param.badStateTime;
-    };
+    }
     document.querySelector("#reset").addEventListener("click", function() {
       Param.Ha = 0;
       Param.Hs = 0;
       Param.Lt = 0;
       Param.Tp = 0;
     });
-  };
+  }
 });
 //Кнопки
 //Полить
@@ -360,10 +360,9 @@ document.querySelector("#pour").addEventListener("click", function() {
 
   document.querySelector("#pour").disabled = true;
 
-  function pourButton() {
+  setTimeout(function() {
     document.querySelector("#pour").disabled = false;
-  }
-  setTimeout(pourButton, 15 * Param.speed);
+  }, 15 * Param.speed);
 });
 
 //Побрызгать
@@ -373,10 +372,9 @@ document.querySelector("#sprinkle").addEventListener("click", function() {
 
   document.querySelector("#sprinkle").disabled = true;
 
-  function pourButton() {
+  setTimeout(function() {
     document.querySelector("#sprinkle").disabled = false;
-  }
-  setTimeout(pourButton, 20 * Param.speed);
+  }, 20 * Param.speed);
 });
 
 //лампа
@@ -387,12 +385,10 @@ document.querySelector("#light").addEventListener("click", function() {
     Param.Lt = 99;
   }, 1 * Param.speed);
 
-  function disLamp() {
+  setTimeout(function() {
     clearInterval(lamp);
     document.querySelector("#light").disabled = false;
-  }
-
-  setTimeout(disLamp, 36 * Param.speed);
+  }, 36 * Param.speed);
 });
 
 //Обогрев
@@ -403,11 +399,10 @@ document.querySelector("#heating").addEventListener("click", function() {
     Param.Tp++;
   }, 1 * Param.speed);
 
-  setTimeout(delHeater, 10 * Param.speed);
-  function delHeater() {
+  setTimeout(function() {
     clearInterval(heat);
     document.querySelector("#heating").disabled = false;
-  }
+  }, 10 * Param.speed);
 });
 //Охлаждение
 document.querySelector("#wind").addEventListener("click", function() {
@@ -417,11 +412,10 @@ document.querySelector("#wind").addEventListener("click", function() {
     Param.Tp--;
   }, 1 * Param.speed);
 
-  setTimeout(delWind, 10 * Param.speed);
-  function delWind() {
+  setTimeout(function() {
     clearInterval(wind);
     document.querySelector("#wind").disabled = false;
-  }
+  }, 10 * Param.speed);
 });
 
 function EndGame() {
